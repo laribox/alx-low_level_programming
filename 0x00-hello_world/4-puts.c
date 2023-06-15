@@ -3,7 +3,7 @@
 /**
  * main - print a simple line to stdout
  */
-void main(void)
+int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
 
