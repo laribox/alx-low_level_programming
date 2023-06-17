@@ -32,11 +32,13 @@ This section provides an overview of the projects and tasks included in this rep
 1. **Project: 0x00-hello_world**
    - **Description**: Introduction to C programming basics.
    - **Tasks**:
-     - Task 0: Write a script that prints "Hello, World!"
-     - Task 1: Write a script that displays a quote
-     - Task 2: Write a script that compiles a C file and creates an executable
-     - ...
-   - **Status**: In Progress
+     - Task 0: Compiler
+     - Task 1: Assembler
+     - Task 2: Name
+     - Task 3: Hello, puts
+     - Task 4: Hello, printf
+     - Task 5: Size is not grandeur, and territory does not make a nation
+   - **Status**: Compelted
    - **Documentation**: [Project 0x00-hello_world Documentation](0x00-hello_world/README.md)
 
 2. **Project: 0x01-variables_if_else_while**
