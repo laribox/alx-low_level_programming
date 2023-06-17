@@ -2,12 +2,20 @@
 
 ## Table of Contents
 
-- [Task 0](#task-0)
-- [Projects and Tasks](#projects-and-tasks)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
+- [Task 0: Positive anything is better than negative nothing](#task-0-positive-anything-is-better-than-negative-nothing)
+- [Task 1: The last digit](#task-1-the-last-digit)
+- [Task 2: I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game](#task-2-i-sometimes-suffer-from-insomnia-and-when-i-cant-fall-asleep-i-play-what-i-call-the-alphabet-game)
+- [Task 3: alphABET](#task-3-alphabet)
+- [Task 4: Hexadecimal printing](#task-4-hexadecimal-printing)
+- [Task 5: I'm federal agent Jack Bauer, and today is the longest day of my life](#task-5-im-federal-agent-jack-bauer-and-today-is-the-longest-day-of-my-life)
+- [Task 6: Inventing is a combination of brains and materials. The more brains you use, the less material you need](#task-6-inventing-is-a-combination-of-brains-and-materials-the-more-brains-you-use-the-less-material-you-need)
+- [Task 7: islower](#task-7-islower)
+- [Task 8: 00...99](#task-8-0099)
+- [Task 9: There are only 3 colors, 10 digits, and 7 notes; its what we do with them that's important](#task-9-there-are-only-3-colors-10-digits-and-7-notes-its-what-we-do-with-them-thats-important)
+- [Task 10: Inventing is a combination of brains and materials. The more brains you use, the less material you need (Advanced)](#task-10-inventing-is-a-combination-of-brains-and-materials-the-more-brains-you-use-the-less-material-you-need-advanced)
+- [Task 11: Combination of Three Digits (Advanced)](#task-11-combination-of-three-digits-advanced)
+- [Task 12: Combinations of Two Two-Digit Numbers (Advanced)](#task-12-combinations-of-two-two-digit-numbers-advanced)
+
 
 ## Task 0: Positive anything is better than negative nothing
 
