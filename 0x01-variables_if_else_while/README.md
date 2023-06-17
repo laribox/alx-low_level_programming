@@ -1,5 +1,13 @@
 # 0x01. C - Variables, if, else, while
-# Task Summary
+
+## Table of Contents
+
+- [Task 0](#Task-0)
+- [Projects and Tasks](#projects-and-tasks)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
 
 ## Task 0: Positive anything is better than negative nothing
 
