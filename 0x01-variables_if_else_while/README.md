@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Task 0](#Task-0)
+- [Task 0](#task-0)
 - [Projects and Tasks](#projects-and-tasks)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
