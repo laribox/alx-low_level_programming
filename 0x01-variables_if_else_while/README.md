@@ -81,3 +81,57 @@ Write a program that prints all possible combinations of two digits.
 **Description:** 
 The program uses loops to print all possible combinations of two digits from 00 to 99.
 
+## Task 10: Inventing is a combination of brains and materials. The more brains you use, the less material you need
+
+**Advanced**
+
+**Objective:**
+Write a program that prints all possible different combinations of two digits.
+
+**Description:**
+- Numbers must be separated by `, `, followed by a space
+- The two digits must be different
+- `01` and `10` are considered the same combination of the two digits `0` and `1`
+- Print only the smallest combination of two digits
+- Numbers should be printed in ascending order, with two digits
+- You can only use the `putchar` function (every other function like `printf`, `puts`, etc... is forbidden)
+- You can only use `putchar` five times maximum in your code
+- You are not allowed to use any variable of type `char`
+- All your code should be in the `main` function
+
+## Task 11: Combination of Three Digits
+
+**Advanced**
+
+**Objective:**
+Write a program that prints all possible different combinations of three digits.
+
+**Description:**
+- Print all combinations of three digits, separated by `, ` and followed by a space.
+- The three digits must be different.
+- Combinations such as `012`, `120`, `102`, `021`, `201`, `210` are considered the same combination of the digits `0`, `1`, and `2`.
+- Print only the smallest combination of three digits.
+- Numbers should be printed in ascending order with three digits.
+- You can only use the `putchar` function (other functions like `printf`, `puts` are forbidden).
+- Limit the usage of `putchar` to a maximum of six times in your code.
+- Avoid using variables of type `char`.
+- All code should be in the `main` function.
+
+## Task 12: Combinations of Two Two-Digit Numbers
+
+**Advanced**
+
+**Objective:**
+Write a program that prints all possible combinations of two two-digit numbers.
+
+**Description:**
+- Print all combinations of two two-digit numbers, separated by a space.
+- The numbers should range from 0 to 99.
+- All numbers should be printed with two digits. For example, 1 should be printed as 01.
+- The combinations of numbers must be separated by a comma, followed by a space.
+- The combinations of numbers should be printed in ascending order.
+- Combinations such as 00 01 and 01 00 are considered the same combination of the numbers 0 and 1.
+- You can only use the `putchar` function (other functions like `printf`, `puts` are forbidden).
+- Limit the usage of `putchar` to a maximum of eight times in your code.
+- Avoid using variables of type `char`.
+- All code should be in the `main` function.
