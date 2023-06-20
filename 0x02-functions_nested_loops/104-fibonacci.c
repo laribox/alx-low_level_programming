@@ -15,7 +15,7 @@ int main(void)
 	for (x = 1 ; x <= 96 ; x++)
 	{
 		k = i + j;
-		printf("%lu", k);
+		printf("%lu", i + j);
 		if (x != 48)
 		{
 			printf(", ");
