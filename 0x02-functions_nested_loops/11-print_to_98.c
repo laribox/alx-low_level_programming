@@ -36,9 +36,9 @@ void print_to_98(int n)
 				}
 				else
 					y = x;
-				_putchar(x / 100 + '0');
-				_putchar(x / 10 + '0');
-				_putchar(x % 10 + '0');
+				_putchar(y / 100 + '0');
+				_putchar(y / 10 + '0');
+				_putchar(y % 10 + '0');
 
 			}
 			else
