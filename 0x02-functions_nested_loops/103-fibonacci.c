@@ -6,20 +6,23 @@
 
 int main(void)
 {
-	long long int i, j, k , s;
-	long int x;
+	long i, j, k , s;
+	long x;
 
 	i = 1;
 	j = 2;
-	s = i + j;
+	s = j;
 	for (x = 1 ; x <= 4000000 ; x++)
 	{
 		k = i + j;
-		s += k;
+		if (k % 2 == 0)
+		{
+			s += k;
+		}
 		i = j;
 		j = k;
 	}
-	printf("%lld",s);
+	printf("%ld",s);
 	printf("\n");
 	return (0);
 }
