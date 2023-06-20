@@ -1,4 +1,3 @@
-#include <main.h>
 #include <unistd.h>
 
 void print_alphabet(void);
@@ -16,9 +15,9 @@ int main(void)
 void print_alphabet(void)
 {
 	char lowercaseAlphabets[] = "abcdefghijklmnopqrstuvwxyz\n";
-	int i ;
+	int i;
 
-	for(i = 0 ; i < (int) strlen(lowercaseAlphabets); i++)
+	for (i = 0 ; i < (int) strlen(lowercaseAlphabets); i++)
 	{
 		_putchar(lowercaseAlphabets[i]);
 	}
