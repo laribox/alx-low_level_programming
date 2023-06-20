@@ -1,10 +1,10 @@
+#include <main.h>
 #include <unistd.h>
-#include <string.h>
 
 /**
-* main - print _putchar
-* Return: 0
-*/
+ * main - print _putchar
+ * Return: 0
+ */
 int main(void)
 {
 	char message[] = "_putchar\n";
