@@ -13,9 +13,9 @@ int main(void)
 		if (i % 3 == 0 || i % 5 == 0)
 		{
 			j += i;
-		} 	
+		} 
 	}
-	printf("%d",j);
+	printf("%d", j);
 	printf("\n");
 	return (0);
 }
