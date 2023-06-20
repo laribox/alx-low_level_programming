@@ -32,7 +32,7 @@ void print_times_table(int n)
 					_putchar((i * j) + '0');
 				}
 
-				if (j != n )
+				if (j != n)
 				{
 					_putchar(',');
 					if (((j + 1) * i) < 10)
@@ -49,5 +49,5 @@ void print_times_table(int n)
 			}
 			_putchar('\n');
 		}
-	}    
-}
+	}
+
