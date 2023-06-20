@@ -6,17 +6,20 @@
 
 int main(void)
 {
-	int i, j, k, x;
-	
+	long int i, j, k;
+	int x;
+
 	i = 1;
 	j = 2;
-	printf("%d, %d, ",i,j);
+	printf("%ld, %ld, ", i, j);
 	for (x = 1 ; x <= 50 ; x++)
-	{	
+	{
 		k = i + j;
-		printf("%d", k);
-		printf(", ");
-		
+		printf("%ld", k);
+		if (x != 50)
+		{
+			printf(", ");
+		}
 		i = j;
 		j = k;
 	}
