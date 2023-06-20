@@ -1,4 +1,4 @@
-
+#include <string.h>
 /**
  * print_alphabet - print alphabet lowercase
  * Return: 0
