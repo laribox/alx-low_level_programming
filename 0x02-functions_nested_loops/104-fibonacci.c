@@ -15,11 +15,11 @@ int main(void)
 	for (x = 1 ; x <= 96 ; x++)
 	{
 		k = i + j;
-		//printf("%lu", i + j);
+		/*printf("%lu", i + j);
 		if (x != 96)
 		{
-		//	printf(", ");
-		}
+			printf(", ");
+		}*/
 		i = j;
 		j = k;
 	}
