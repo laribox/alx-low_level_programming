@@ -1,18 +1,10 @@
-#include <unistd.h>
-#include <string.h>
+#include <main.h>
 
-int _putchar(char);
-void print_alphabet(void);
 
 /**
- * main - print alphabet lowercase
+ * print_alphabet - print alphabet lowercase
  * Return: 0
  */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
 
 void print_alphabet(void)
 {
