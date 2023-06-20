@@ -7,7 +7,6 @@
  */
 int main(void)
 {
-    print_to_98(111);
-    print_to_98(81);
+    jack_bauer();
     return (0);
 }
