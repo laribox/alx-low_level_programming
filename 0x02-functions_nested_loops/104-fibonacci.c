@@ -16,7 +16,7 @@ int main(void)
 	{
 		k = i + j;
 		printf("%lu", i + j);
-		if (x != 48)
+		if (x != 96)
 		{
 			printf(", ");
 		}
