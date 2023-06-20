@@ -12,9 +12,11 @@ int main(void)
 	i = 1;
 	j = 2;
 	s = j;
-	for (x = 1 ; x <= 4000000 ; x++)
+	for (x = 1 ; x <= 1000; x++)
 	{
 		k = i + j;
+		if (k >= 4000000)
+			break;
 		if (k % 2 == 0)
 		{
 			s += k;
