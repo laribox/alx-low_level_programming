@@ -2,7 +2,7 @@
 void print_alphabet_x10(void);
 int _putchar(char);
 /**
- * print_alphabet - print alphabet lowercase
+ * print_alphabet_x10 - print alphabet lowercase 10 times
  * Return: 0
  */
 
@@ -12,7 +12,7 @@ void print_alphabet_x10(void)
 	int i, j;
 
 	for (j = 0 ; j < 10 ; j++)
-	{	
+	{
 		for (i = 0 ; i < (int) strlen(lowercaseAlphabets); i++)
 		{
 			_putchar(lowercaseAlphabets[i]);
