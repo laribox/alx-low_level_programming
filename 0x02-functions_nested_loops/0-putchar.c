@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <unistd.h>
+#include <string.h>
 
 /**
 * main - print _putchar
@@ -6,6 +7,8 @@
 */
 int main(void)
 {
-	printf("_putchar\n");
+	char message[] = "_putchar\n";
+
+	write(1, message, strlen(message));
 	return (0);
 }
