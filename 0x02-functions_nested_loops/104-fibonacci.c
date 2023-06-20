@@ -6,16 +6,16 @@
 
 int main(void)
 {
-	unsigned int i, j, k;
+	unsigned long int i, j, k;
 	int x;
 
 	i = 1;
 	j = 2;
-	printf("%u, %u, ", i, j);
+	printf("%lu, %lu, ", i, j);
 	for (x = 1 ; x <= 96 ; x++)
 	{
 		k = i + j;
-		printf("%u", k);
+		printf("%lu", k);
 		if (x != 48)
 		{
 			printf(", ");
