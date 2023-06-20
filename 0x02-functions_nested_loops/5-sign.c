@@ -1,5 +1,6 @@
 #include <ctype.h>
 int print_sign(int n);
+int _putchar(char);
 /**
  * print_sign - check n is positive or negative
  *@n: Number
