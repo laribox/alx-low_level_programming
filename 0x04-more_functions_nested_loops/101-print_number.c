@@ -5,7 +5,7 @@
  */
 void printDigit(int digit)
 {
-	putchar(digit + '0');
+	_putchar(digit + '0');
 }
 
 /**
@@ -14,43 +14,43 @@ void printDigit(int digit)
  */
 void print_number(int n)
 {
-	int i;
+	unsigned int i = n;
 
-	if (n > 999999999)
+	if (i > 999999999)
 	{
-		printDigit((n / 10000000000) % 10);
+		printDigit((i / 10000000000) % 10);
 	}
-	if (n > 99999999)
+	if (i > 99999999)
 	{
-		printDigit((n / 100000000) % 10);
+		printDigit((i / 100000000) % 10);
 	}
-	if (n > 9999999)
+	if (i > 9999999)
 	{
-		printDigit((n / 10000000) % 10);
+		printDigit((i / 10000000) % 10);
 	}
-	if (n > 999999)
+	if (i > 999999)
 	{
-		printDigit((n / 1000000) % 10);
+		printDigit((i / 1000000) % 10);
 	}
-	if (n > 99999)
+	if (i > 99999)
 	{
-		printDigit((n / 100000) % 10);
+		printDigit((i / 100000) % 10);
 	}
-	if (n > 9999)
+	if (i > 9999)
 	{
-		printDigit((n / 10000) % 10);
+		printDigit((i / 10000) % 10);
 	}
-	if (n > 999)
+	if (i > 999)
 	{
-		printDigit((n / 1000) % 10);
+		printDigit((i / 1000) % 10);
 	}
-	if (n > 99)
+	if (i > 99)
 	{
-		printDigit((n / 100) % 10);
+		printDigit((i / 100) % 10);
 	}
-	if (n > 9)
+	if (i > 9)
 	{
-		printDigit((n / 10) % 10);
+		printDigit((i / 10) % 10);
 	}
-	printDigit(n % 10);
+	printDigit(i % 10);
 }
