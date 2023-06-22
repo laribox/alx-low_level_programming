@@ -14,8 +14,14 @@ void printDigit(int digit)
  */
 void print_number(int n)
 {
-	unsigned int i = n;
+	unsigned int i;
 
+	i = n;
+	if (n < 0)
+	{
+		i *= -1;
+		_putchar('-');
+	} 	
 	if (i > 999999999)
 	{
 		printDigit((i / 10000000000) % 10);
