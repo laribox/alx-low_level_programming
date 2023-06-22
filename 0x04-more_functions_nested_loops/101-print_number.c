@@ -1,12 +1,4 @@
 #include "main.h"
-/**
- * printDigit - Print an integer.
- * @digit: Integer that need to be printed.
- */
-void printDigit(int digit)
-{
-	_putchar(digit + '0');
-}
 
 /**
  * print_number - Print an integer.
@@ -14,49 +6,21 @@ void printDigit(int digit)
  */
 void print_number(int n)
 {
-	unsigned int i;
+	unsigned int temp = 0;
 
-	i = n;
-	if (n < 0)
+	if (n >= 0)
 	{
-		i *= -1;
+		temp = n;
+	}
+	else
+	{
+		temp = -n;
 		_putchar('-');
-	} 	
-	if (i > 999999999)
-	{
-		printDigit((i / 10000000000) % 10);
 	}
-	if (i > 99999999)
+	if (temp / 10 > 0)
 	{
-		printDigit((i / 100000000) % 10);
+		print_number(temp / 10);
 	}
-	if (i > 9999999)
-	{
-		printDigit((i / 10000000) % 10);
-	}
-	if (i > 999999)
-	{
-		printDigit((i / 1000000) % 10);
-	}
-	if (i > 99999)
-	{
-		printDigit((i / 100000) % 10);
-	}
-	if (i > 9999)
-	{
-		printDigit((i / 10000) % 10);
-	}
-	if (i > 999)
-	{
-		printDigit((i / 1000) % 10);
-	}
-	if (i > 99)
-	{
-		printDigit((i / 100) % 10);
-	}
-	if (i > 9)
-	{
-		printDigit((i / 10) % 10);
-	}
-	printDigit(i % 10);
+	_putchar((temp % 10) + 48);
 }
+
