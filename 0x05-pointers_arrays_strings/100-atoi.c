@@ -22,7 +22,7 @@ int _atoi(char *s)
 		{
 			stop = 1;
 		}
-		if (s[i] == '-')
+		if (s[i] == '-' && stop == 0)
 		{
 			++counter;
 		}
