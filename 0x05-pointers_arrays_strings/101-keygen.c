@@ -17,7 +17,7 @@ int main(void)
 	const char uppercase[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	const char special[] = "!@#$%^&*()";
 	const char numbers[] = "0123456789";
-	char password[string_length + 1];
+	char password[11];
 
 	for (i = 0 ; i < string_length ; ++i)
 	{
@@ -41,4 +41,5 @@ int main(void)
 	}
 
 	printf("%s\n", password);
+	return (0);
 }
