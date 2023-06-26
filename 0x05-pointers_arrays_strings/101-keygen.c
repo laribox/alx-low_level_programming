@@ -11,7 +11,6 @@
 int main(void)
 {
 	int i;
-	const int string_length = 10;
 	const char lowercase[] = "abcdefghijklmnopqrstuvwxyz";
 	const char uppercase[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	const char special[] = "!@#$%^&*()";
@@ -19,7 +18,7 @@ int main(void)
 	char password[11];
 
 	srand(time(NULL));
-	for (i = 0 ; i < string_length ; ++i)
+	for (i = 0 ; i < 10 ; ++i)
 	{
 		int randomNumber = rand() % 4;
 
@@ -39,7 +38,7 @@ int main(void)
 				break;
 		}
 	}
-
+	password[10] = '\0'; 
 	printf("%s\n", password);
 	return (0);
 }
