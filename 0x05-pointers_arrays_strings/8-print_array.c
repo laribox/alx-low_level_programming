@@ -14,6 +14,9 @@ void print_array(int *a ,int n)
 		if (i > 9)
 			_putchar((a[i] / 10) + '0');
 		_putchar((a[i] % 10) + '0');
-		_putchar('\n');
+		
+		if (i != n - 1)
+			_putchar(', ');
 	}
+		_putchar('\n');
 }
