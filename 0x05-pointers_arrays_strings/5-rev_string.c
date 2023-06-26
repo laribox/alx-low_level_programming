@@ -7,11 +7,12 @@
 void rev_string(char *s)
 {
 	int i;
-	char t[strlen(s)];
+	char t[200];
 
 	for (i =(int)strlen(s) - 1; i >= 0 ; --i)
 	{
 		t[strlen(s) - i - 1] = s[i];
 	}
-	*s = &t;
+	t[i] = '\0';
+	strcpy(s, t);
 }
