@@ -16,7 +16,10 @@ void print_array(int *a ,int n)
 		_putchar((a[i] % 10) + '0');
 		
 		if (i != n - 1)
-			_putchar(', ');
+		{
+			_putchar(',');
+			_putchar(' ');
+		}
 	}
 		_putchar('\n');
 }
