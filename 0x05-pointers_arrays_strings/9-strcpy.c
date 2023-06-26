@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _strcpy - copy the string pointed to by src to dest
- * @dest: string to match 
+ * @dest: string to match
  * @src: string
  * Return: 0 is success
  */
