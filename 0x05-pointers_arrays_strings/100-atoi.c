@@ -7,18 +7,23 @@
  */
 int _atoi(char *s)
 {
-	int i, num = 0;
+	int i, counter = 0;
+	unsigned int num = 0;
 
 	for (i = 0 ; i < (int)strlen(s) ; ++i)
 	{
-		if (s[i] == '-')
-		{
-			num *= -1;
-		}
+
 		if (s[i] >= 48 && s[i] <= 57)
 		{
 			num = num * 10 + (s[i] - '0');
 		}
+		if (s[i] == '-')
+		{
+			++counter;
+		}
 	}
-	return (num);
+	if (counter % 2 == 0)
+		return (num);
+	else
+		return (num * -1);
 }
