@@ -1,4 +1,4 @@
-#include "main.h"
+include "main.h"
 
 /**
  * _atoi - Convert a string to an integer.
@@ -7,23 +7,18 @@
  */
 int _atoi(char *s)
 {
-	int i, j = 0, counter = 0;
-	char string[5];
-
+	int i, num = 0;
+	
 	for (i = 0 ; i < (int)strlen(s) ; ++i)
 	{
 		if (s[i] == '-')
 		{
-			++counter;
+			num *= -1;	
 		}
 		if (s[i] >= 48 && s[i] <= 57)
 		{
-			string[j] = s[i];
-			++j;
+			num = num * 10 + s[i];	
 		}
 	}
-	if (counter % 2 != 0)
-		return (atoi(string) * -1);
-	else
-		return (atoi(string));
+	return (num);
 }
