@@ -11,7 +11,12 @@ void print_array(int *a ,int n)
 
 	for (i = 0 ; i < n; ++i)
 	{
-		if (i > 9)
+		if (a[i] < 0)
+		{
+			a[i] *= -1;
+			_putchar('-');
+		}
+		if (a[i] > 9)
 			_putchar((a[i] / 10) + '0');
 		_putchar((a[i] % 10) + '0');
 		
