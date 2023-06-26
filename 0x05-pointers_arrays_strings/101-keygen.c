@@ -10,7 +10,6 @@
  */
 int main(void)
 {
-	srand(time(NULL));
 	int i;
 	const int string_length = 10;
 	const char lowercase[] = "abcdefghijklmnopqrstuvwxyz";
@@ -19,6 +18,7 @@ int main(void)
 	const char numbers[] = "0123456789";
 	char password[11];
 
+	srand(time(NULL));
 	for (i = 0 ; i < string_length ; ++i)
 	{
 		int randomNumber = rand() % 4;
