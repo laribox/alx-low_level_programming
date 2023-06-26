@@ -8,16 +8,16 @@
 int _atoi(char *s)
 {
 	int i, num = 0;
-	
+
 	for (i = 0 ; i < (int)strlen(s) ; ++i)
 	{
 		if (s[i] == '-')
 		{
-			num *= -1;	
+			num *= -1;
 		}
 		if (s[i] >= 48 && s[i] <= 57)
 		{
-			num = num * 10 + s[i];	
+			num = num * 10 + atoi(s[i]);
 		}
 	}
 	return (num);
