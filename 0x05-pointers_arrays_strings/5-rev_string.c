@@ -11,7 +11,7 @@ void rev_string(char *s)
 	for (i = 0; i < (int)strlen(s) / 2; ++i)
 	{
 		t = s[strlen(s) - i];
-		s[strlen(s) - i] = s[i];
-		s[i] = t;		
+		*s[strlen(s) - i] = s[i];
+		*s[i] = t;		
 	}
 }
