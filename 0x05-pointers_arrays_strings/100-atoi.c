@@ -7,15 +7,20 @@
  */
 int _atoi(char *s)
 {
-	int i, counter = 0;
+	int i, counter = 0, stop = 0, started = 0;
 	unsigned int num = 0;
 
 	for (i = 0 ; i < (int)strlen(s) ; ++i)
 	{
 
-		if (s[i] >= 48 && s[i] <= 57)
+		if (s[i] >= 48 && s[i] <= 57 && stop == 0)
 		{
 			num = num * 10 + (s[i] - '0');
+			started = 1;
+		}
+		if (started == 1 && !(s[i] >= 48 && s[i] <= 57))
+		{
+			stop = 1;
 		}
 		if (s[i] == '-')
 		{
