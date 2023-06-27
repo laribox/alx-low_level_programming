@@ -8,16 +8,16 @@
  */
 int main(void)
 {
-char ran;
-int y;
+	char ran;
+	int y;
 
-srand(time(0));
-while (y <= 2645)
-{
-ran = rand() % 128;
-y += ran;
-putchar(ran);
-}
-putchar(2772 - y);
-return (0);
+	srand(time(0));
+	while (y <= 2645)
+	{
+		ran = rand() % 128;
+		y += ran;
+		putchar(ran);
+	}
+	putchar(2772 - y);
+	return (0);
 }
