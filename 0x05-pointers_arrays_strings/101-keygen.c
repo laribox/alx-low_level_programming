@@ -2,22 +2,22 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - entry point generates a random password
+ * main - Gnerates a random password
  *
  * Return: the generated password
  */
 int main(void)
 {
-char c;
-int x;
+char ran;
+int y;
 
 srand(time(0));
 while (x <= 2645)
 {
-c = rand() % 128;
-x += c;
-putchar(c);
+ran = rand() % 128;
+y += ran;
+putchar(ran);
 }
-putchar(2772 - x);
+putchar(2772 - y);
 return (0);
 }
