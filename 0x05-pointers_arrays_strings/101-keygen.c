@@ -10,35 +10,30 @@
  */
 int main(void)
 {
-	int i;
-	const char lowercase[] = "abcdefghijklmnopqrstuvwxyz";
-	const char uppercase[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	const char special[] = "!@#$%^&*()";
-	const char numbers[] = "0123456789";
-	char password[11];
+	char password[84];
+	int index = 0, sum = 0, diff, random = 0;
 
-	srand(time(NULL));
-	for (i = 0 ; i < 10 ; ++i)
+	srand(time(0));
+
+	while (sum < 2772)
 	{
-		int randomNumber = rand() % 4;
-
-		switch (randomNumber)
+		random = 33 + rand() % 94;
+		if (random + sum <= 2772)
 		{
-			case 0:
-				password[i] = lowercase[rand() % 26];
-				break;
-			case 1:
-				password[i] = uppercase[rand() % 26];
-				break;
-			case 2:
-				password[i] = special[rand() % 10];
-				break;
-			case 3:
-				password[i] = numbers[rand() % 10];
-				break;
+			password[index] = random;
+			sum += password[index++];
+			printf("%d\n", sum);
 		}
+		else
+		{
+			diff = 2772 - sum;
+			sum += diff;
+			password[index] = diff;
+		}
+
+
 	}
-	password[10] = '\0'; 
 	printf("%s\n", password);
+
 	return (0);
 }
