@@ -12,7 +12,7 @@ char ran;
 int y;
 
 srand(time(0));
-while (x <= 2645)
+while (y <= 2645)
 {
 ran = rand() % 128;
 y += ran;
