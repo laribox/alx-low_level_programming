@@ -12,7 +12,14 @@ char *cap_string(char *str)
 	
 	for (i = 0; i < (int)strlen(str) ; i++)
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
+		if ((str[i] > 32 && str[i] < 48) ||
+		(str[i] > 57 && str[i] < 64) || str[i] > 122 ||
+		str[i] == " " || str[i] == '\t' || str[i] == '\n')
+		{
+			if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
+				str[i] -= 32;
+		}
+		if (str[i + 1] >= 'a' && str[i + 1] <= 'z' && i == 0)
 			str[i] -= 32;
 	}
 	return (str);
