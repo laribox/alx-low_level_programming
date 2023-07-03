@@ -14,7 +14,10 @@ char *_strchr(char *s, char c)
 	while (i < (int)strlen(s))
 	{
 		if (s[i] == c)
-			return (s + i);
+		{
+			s = &s[i];
+			return (s);
+		}
 		i++;
 	}
 
