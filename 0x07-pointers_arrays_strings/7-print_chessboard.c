@@ -1,6 +1,6 @@
 /**
  * print_chessboard - function that prints the chessboard.
- * @a: chessboard array 
+ * @a: chessboard array
  */
 
 void print_chessboard(char (*a)[8])
