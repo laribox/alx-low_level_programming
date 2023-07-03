@@ -9,17 +9,5 @@
 
 char *_strchr(char *s, char c)
 {
-	int i;
-
-	while (i < (int)strlen(s))
-	{
-		if (s[i] == c)
-		{
-			s = &s[i];
-			return (s);
-		}
-		i++;
-	}
-
-	return (NULL);
+	return (strchr(s, c));
 }
