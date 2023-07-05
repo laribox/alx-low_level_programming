@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * factorial - function that returns the factorial of a given number.
- * @n: Integer
- * Return: factorial n
+ * _pow_recursion - function that returns the value of x raised to the power of y.
+ * @x: Integer
+ * @y: power
+ * Return: x power y
  */
-int factorial(int n)
+int _pow_recursion(int x, int y)
 {
 	return (n + factorial(n - 1));
 }
