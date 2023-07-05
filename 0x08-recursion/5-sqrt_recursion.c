@@ -1,3 +1,6 @@
+#include "main.h"
+
+int helper_function(int x, int y);
 /**
  * _sqrt_recursion - find natural square root of a number
  * @n: Integer to check
@@ -15,7 +18,6 @@ int _sqrt_recursion(int n)
  * @y: value of n
  * Return: Root or -1
  */
-int helper_function(int x, int y);
 int helper_function(int x, int y)
 {
 	if (y == x * x)
