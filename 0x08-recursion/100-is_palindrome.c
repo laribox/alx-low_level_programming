@@ -1,8 +1,9 @@
 #include "main.h"
-int helper_function(char *x,int y, int z);
+int helper_function(char *x, int y, int z);
 /**
- * is_palindrome - function that returns 1 if a string is a palindrome and 0 if not.
- * @s: String to check 
+ * is_palindrome - function that returns 1
+ * if a string is a palindrome and 0 if not.
+ * @s: String to check
  * Return: returns 1 if a string is a palindrome and 0 if not.
  */
 int is_palindrome(char *s)
@@ -15,11 +16,11 @@ int is_palindrome(char *s)
  * helper_function - help to find if n is prime number
  * @x: Point to first element of String
  * @y: First index
- * @z: Second Index 
+ * @z: Second Index
  * Return: returns 1 if a string is a palindrome and 0 if not.
  */
 
-int helper_function(char *x,int y, int z)
+int helper_function(char *x, int y, int z)
 {
 	if (x[y] == x[z])
 	{
@@ -31,8 +32,8 @@ int helper_function(char *x,int y, int z)
 		{
 			return (helper_function(x, y + 1, z - 1));
 		}
-
-	}else
+	}
+	else
 	{
 		return (0);
 	}
