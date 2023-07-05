@@ -5,7 +5,7 @@
  */
 int _sqrt_recursion(int n)
 {
-	helper_function(1, n);
+	return (helper_function(1, n));
 
 }
 
@@ -15,7 +15,7 @@ int _sqrt_recursion(int n)
  * @y: value of n
  * Return: Root or -1
  */
-
+int helper_function(int x, int y);
 int helper_function(int x, int y)
 {
 	if (y == x * x)
