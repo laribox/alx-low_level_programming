@@ -7,7 +7,7 @@ int helper_function(char *x,int y, int z);
  */
 int is_palindrome(char *s)
 {
-	helper_function(s, 0, (int)strlen(s) - 1);
+	return (helper_function(s, 0, (int)strlen(s) - 1));
 
 }
 
@@ -29,7 +29,7 @@ int helper_function(char *x,int y, int z)
 		}
 		else
 		{
-			helper_function(x, y + 1, z - 1);
+			return (helper_function(x, y + 1, z - 1));
 		}
 
 	}else
