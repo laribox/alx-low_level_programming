@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - main function
+ * main - Function to calc multiply of 2 numbers
  * @argc: number of arguments
  * @argv: arguments
  * Return: 0 always
