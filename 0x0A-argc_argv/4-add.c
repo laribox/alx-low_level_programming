@@ -9,15 +9,17 @@
 
 int main(int argc, char *argv[])
 {
-	int sum = 0, i;
+	int sum = 0, i, x;
+	char *endptr;
 
 	if (argc > 1)
 	{
 		for (i = 1; i < argc ; i++)
 		{
-			if (atoi(argv[i]))
+			x = strtol(argv[i], &endptr, 10);
+			if (!*endptr)
 			{
-				sum += atoi(argv[i]);
+				sum += x;
 			}
 			else
 			{
