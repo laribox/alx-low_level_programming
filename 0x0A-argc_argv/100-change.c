@@ -12,15 +12,15 @@ int main(int argc, char *argv[])
 {
 	int money;
 
-	money = atoi(argv[1]);
-	if (money < 0)
-	{
-		printf("0\n");
-		return (0);
-	}
 
 	if (argc == 2)
 	{
+		money = atoi(argv[1]);
+		if (money < 0)
+		{
+			printf("0\n");
+			return (0);
+		}
 		printf("%d\n", getChange(money));
 	}
 	else
