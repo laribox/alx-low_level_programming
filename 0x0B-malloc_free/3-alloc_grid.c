@@ -28,6 +28,7 @@ int **alloc_grid(int width, int height)
 		if (two_dim_arra[i] == NULL)
 		{
 			free(two_dim_arra[i]);
+			free(two_dim_arra);
 		}
 
 	}
