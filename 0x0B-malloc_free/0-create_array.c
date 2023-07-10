@@ -21,7 +21,7 @@ char *create_array(unsigned int size, char c)
 	char_arr = malloc(sizeof(char) * size);
 	for (i = 0; i < (int)size ; i++)
 	{
-		char_arr[i] = c ;
+		char_arr[i] = c;
 	}
 
 	return (char_arr);
