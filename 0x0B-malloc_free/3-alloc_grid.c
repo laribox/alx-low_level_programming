@@ -17,6 +17,7 @@ int **alloc_grid(int width, int height)
 
 	if (height <= 0 || width <= 0 || two_dim_arra == NULL)
 	{
+		free(two_dim_arra);
 		return (NULL);
 	}
 
