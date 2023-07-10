@@ -27,7 +27,7 @@ int **alloc_grid(int width, int height)
 		two_dim_arra[i] = malloc(sizeof(int *) * width);
 		if (two_dim_arra[i] == NULL)
 		{
-			for (; i >= 0 ; i-)
+			for (; i >= 0 ; i--)
 				free(two_dim_arra[i]);
 			free(two_dim_arra);
 			return (NULL);
