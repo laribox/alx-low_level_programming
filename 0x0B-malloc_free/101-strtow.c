@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 int getWordsCount(char *str);
 void getWordCoordinates(char *str, int startFrom, int *start, int *end);
