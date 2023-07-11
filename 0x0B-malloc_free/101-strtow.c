@@ -11,6 +11,8 @@ void getWordCoordinates(char *str, int startFrom, int *start, int *end);
  */
 char **strtow(char *str)
 {
+	int i, j, wordLength, wordIndex = 0, start = 0, end = 0;
+
 	if (str == NULL || *str == '\0')
 	{
 		return (NULL);
@@ -24,20 +26,17 @@ char **strtow(char *str)
 		return (NULL);
 	}
 
-	int wordIndex = 0;
-	int start = 0, end = 0;
-
-	for (int i = 0; i < numWords; i++)
+	for (i = 0; i < numWords; i++)
 	{
 		getWordCoordinates(str, start, &start, &end);
-		int wordLength = end - start + 1;
+		wordLength = end - start + 1;
 
 		words[wordIndex] = malloc((wordLength + 1) * sizeof(char));
 
 		if (words[wordIndex] == NULL)
 		{
 
-			for (int j = 0; j < wordIndex; j++)
+			for (j = 0; j < wordIndex; j++)
 			{
 				free(words[j]);
 			}
