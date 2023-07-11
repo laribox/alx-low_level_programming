@@ -14,7 +14,17 @@ char **strtow(char *str)
 	int i, j, wordLength, numWords, wordIndex = 0, start = 0, end = 0;
 	char **words;
 
-	if (str == NULL || *str == '\0')
+	if (str == NULL || *str == '\0' || str[0] == '\0')
+	{
+		return (NULL);
+	}
+
+	while (*str != '\0' && (*str == ' ' || *str == '\t' || *str == '\n'))
+	{
+		str++;
+	}
+
+	if (*str == '\0')
 	{
 		return (NULL);
 	}
