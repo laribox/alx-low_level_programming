@@ -11,15 +11,16 @@ void getWordCoordinates(char *str, int startFrom, int *start, int *end);
  */
 char **strtow(char *str)
 {
-	int i, j, wordLength, wordIndex = 0, start = 0, end = 0;
+	int i, j, wordLength, numWords, wordIndex = 0, start = 0, end = 0;
+	char **words;
 
 	if (str == NULL || *str == '\0')
 	{
 		return (NULL);
 	}
 
-	int numWords = getWordsCount(str);
-	char **words = malloc((numWords + 1) * sizeof(char *));
+	numWords = getWordsCount(str);
+	words = malloc((numWords + 1) * sizeof(char *));
 
 	if (words == NULL)
 	{
