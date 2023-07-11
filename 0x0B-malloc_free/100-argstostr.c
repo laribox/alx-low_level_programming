@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * argstostr - Function  function that concatenates all
  * the arguments of your program.
