@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * array_range - Function that reallocates a memory
+ * _realloc - function that reallocates a memory block using malloc and free
  * block using malloc and free
  * @ptr: pointer to the memory previously allocated
  * @old_size: Old mem size
