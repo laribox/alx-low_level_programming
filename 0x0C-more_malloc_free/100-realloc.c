@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * array_range - Function that reallocates a memory 
+ * array_range - Function that reallocates a memory
  * block using malloc and free
  * @ptr: pointer to the memory previously allocated
  * @old_size: Old mem size
@@ -26,7 +26,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 	else if (new_size == old_size)
 	{
-		return ptr;
+		return (ptr);
 	}
 
 	mem = malloc(new_size);
