@@ -5,7 +5,7 @@
  * @s1: First string
  * @s2: Second String
  * @n: Size of s2 bytes to concate
- * Return: concatenated string pointer
+ * Return: Concatenated String
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -35,11 +35,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 
-	for (i = 0; i < strlen(s1); i++)
+	for (i = 0; i < (int)strlen(s1); i++)
 	{
 		conc[i] = s1[i];
 	}
-	for (j = i; j < strlen(s1) + n; j++)
+	for (j = i; j < (int)strlen(s1) + (int)n; j++)
 	{
 		conc[j] = s2[j - strlen(s1)];
 	}
