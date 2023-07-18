@@ -4,7 +4,7 @@
  * init_dog - initializes a struct of dog
  * @d: pointer to struct
  * @name: pointer to name of the dog
- * @age: The dog age 
+ * @age: The dog age
  * @owner: owner of dog pointer
  *
  * Return: void
