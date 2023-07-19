@@ -2,9 +2,9 @@
 
 /**
  * array_iterator - Function the execute a pointer
- * function on each elements of the array 
+ * function on each elements of the array
  *
- * @array: array 
+ * @array: array
  * @size: Size of the array
  * @action: Function pointer
  *
