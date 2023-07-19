@@ -5,7 +5,7 @@
   * in an array
   * @array: ...
   * @size: Size of the array
-  * @cmp: function to search 
+  * @cmp: function to search
   *
   * Return: ...
   */
