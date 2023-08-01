@@ -1,3 +1,5 @@
+![img](https://www.thesouthafrican.com/wp-content/uploads/2022/12/ALX-800x529.jpg)
+
 # Learning C Programming Language
 
 This repository is dedicated to learning the C programming language through tasks and projects provided by the ALX program.
