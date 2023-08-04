@@ -13,7 +13,8 @@ int clear_bit(unsigned long int *n, unsigned int index)
 
 	if (index < 64)
 	{
-		bitwiseMask = 0 << index;
+		bitwiseMask = 1 << index;
+		bitwiseMask = ~bitwiseMask;
 		*n = bitwiseMask & *n;
 		return (1);
 	}
